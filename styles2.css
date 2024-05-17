@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #8e2de2, #4a00e0); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  text-align: center;
+  color: #333; /* Dark gray text */
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth effect */
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  background-color: #6f42c1; /* Purple submit button */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a00e0; /* Darker purple on hover */
+  transform: scale(1.05); /* Scale effect on hover */
+}
